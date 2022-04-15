@@ -1,5 +1,6 @@
 class TodoItem{
     done;
+
     constructor(id){
         this.id = id;
         this.title = prompt("Enter your title: ", "none");
@@ -33,7 +34,7 @@ class TodoList {
     display(){
         for(let i = 0; i < this.items.length; i++){
             if(this.items[i] !== undefined){
-                console.log(this.items[i]);
+                console.log(`id: ${this.items[i].id} ,title: ${this.items[i].title} , description: ${this.items[i].description}, done: ${this.items[i].done}`);
             }
         }
     }
